@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;   
+    
+}
+.main-box{
+    width: 25%;
+    height: 75vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(6, 103, 71);
+    padding: 0rem .5rem;
+    overflow-y: scroll;
+    overflow-x: hidden;   
+    /* overflow: auto; */
+    position: relative;
+}
+.main-box .header{
+    width: 100%;
+    top: 0;
+    position: fixed ;
+    background-color: white;
+    height: 3rem;
+    z-index: 2;
+    position: absolute;
+    overflow: hidden;
+}
+.header .fix{
+    width: 22.4rem;
+    overflow: hidden;
+    height: 3rem;
+    background-color: white;
+    display: flex;
+    font-family: cursive;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0 0.8rem 0 0;
+    overflow: hidden;
+}
+.logo img{
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.header .logo-icon i{
+    margin: 0 .6rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+.logo-icon img{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding-top: .1rem;
+    cursor: pointer;
+}
+.main-box .stories{
+    margin-top: 3.7rem;
+    display: flex;
+    column-gap: 1rem;
+    /* overflow-x: scroll; */
+    overflow: hidden;
+    cursor: pointer;
+}
+.stories .story{
+    width: 100%;
+}
+.story img{
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: .2rem;
+    object-fit: cover;
+    border: 3px solid rgb(210, 11, 127);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.storyes{
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: .2rem;
+    object-fit: cover;
+    border: 3px solid rgb(96, 91, 94);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.storyes img{
+    width: 2.9rem;
+    height: 2.9rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.storyes p{
+    text-align: center;
+    padding-top: .4rem;
+    font-size: 12px;
+}
+.storyyy{
+    width: 3.6rem;
+    height: 3.6rem;
+    padding: .2rem;
+    object-fit: cover;
+    border: 3px solid rgb(96, 91, 94);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.story p{
+    text-align: center;
+    font-size: 12px;
+}
+.main-box .post{
+    width: 100%;
+    height: 60%;
+    margin-top: .5rem;
+    height: auto;
+    /* background-color: blue; */
+}
+.post .post-name{
+    width: 100%;
+    height: 3rem;
+    /* background-color: blueviolet; */
+    display: flex;
+    margin-top: -.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .5rem;
+}
+.post-name .pic{
+    width: 100%;
+    display: flex;
+    gap: .3rem;
+}
+.pic p{
+    margin-top: .3rem;
+    cursor: pointer;
+}
+.pic img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.post .video1{
+    width: 100%;
+    height: 15rem;
+    background-color: pink;
+    position: relative;
+}
+.video1 img{
+    width: 100%;
+    height: 100%;
+}
+.video1 .like{
+    width: 100%;
+    height: 80%;
+    position: absolute;  
+    margin: 0.6rem .8rem;
+    top:40%;
+    left: 46%;
+    transform: translate(-50%,-40%);
+    opacity: 0;
+    /* background-color: blueviolet; */
+    /* transition: all ease-in 0.1s; */
+    /* animation: bounce ease infinite 0.5s; */
+}
+.like i{
+    font-size: 4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.2rem;
+    cursor: pointer;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.6);
+    }   
+    100%{
+        transform: scale(1.02);
+    }
+}
+.video1 video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    z-index: 1;
+}
+.commenting{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.commenting i{
+    font-size: 20px;
+    padding: .3rem .5rem; 
+    cursor: pointer;
+}
+.commenting .box1{
+    width: 150px;
+}
+
+.box1 img{
+    width: 1.2rem;
+    height: 1rem;
+}
+.commenting .cap-img{
+    width: 100%;
+}
+.cap-img p{
+   font-size: 12px;
+   padding: 0 .5rem;
+}
+.cap-img span{
+    font-weight: 4s00;
+}
+.post .video2{
+    width: 100%;
+    height: 13rem;
+    background-color: pink;
+    position: relative;
+}
+.video2 img{
+    width: 100%;
+    height: 100%;
+}
+.video2 .like{
+    width: 100%;
+    height: 80%;
+    position: absolute;  
+    margin: 0.6rem .8rem;
+    top:40%;
+    left: 46%;
+    transform: translate(-50%,-40%);
+    opacity: 0;
+    /* background-color: blueviolet; */
+    /* transition: all ease-in 0.1s; */
+    /* animation: bounce ease infinite 0.5s; */
+}
